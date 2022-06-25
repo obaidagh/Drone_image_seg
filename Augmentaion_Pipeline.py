@@ -11,7 +11,7 @@ def image_augmentation(image_path,augmentaion_path,pipeline):
     globed=tf.io.gfile.glob(image_path)
 
     if not os.path.exists(augmentaion_path):
-        os.mkdir(augmentaion_path)
+        os.makedirs(augmentaion_path)
 
     for item in globed:
         

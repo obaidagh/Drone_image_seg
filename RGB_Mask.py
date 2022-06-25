@@ -12,7 +12,7 @@ def RGB_to_Mask(Class_dict,RGB_path,Mask_path):
 
 
     if not os.path.exists(Mask_path):
-        os.mkdir(Mask_path)
+        os.makedirs(Mask_path)
 
     for i,item in enumerate(RGB_path):
        # if i < limit[0] or i > limit[1]:
